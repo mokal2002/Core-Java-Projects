@@ -90,6 +90,25 @@ A simple console-based Hospital Management System developed in Core Java using M
    ```bash
    git clone https://github.com/yourusername/HospitalManagementSystem.git
    cd HospitalManagementSystem
+<hr>
 
-<h3>3. Car Rental System</h3>
+# Car Rental System
+
+The Car Rental System is a simple command-line application that allows users to rent and return cars. It manages car inventory, customer information, and rental transactions. This project demonstrates the use of object-oriented programming concepts such as classes, methods, and encapsulation.
+
+## Features
+
+- **Car Inventory Management**: Maintain a list of cars with attributes like brand, model, and rental price.
+- **Customer Management**: Keep track of customers renting cars, including their personal details.
+- **Rent a Car**: Allows customers to rent a car from the available inventory, with rental costs calculated based on the number of days.
+- **Return a Car**: Allows customers to return a rented car, updating the car’s availability status.
+- **Dynamic Pricing**: Calculates the total rental price based on the car's base price and the duration of the rental period.
+
+## Technologies Used
+
+- **Java**: The primary programming language used for developing the application.
+- **Object-Oriented Programming**: Used to structure the code with classes and objects.
+- **Collections Framework**: Utilized for managing lists of cars, customers, and rentals.
+- **Command-Line Interface**: The application runs in a command-line environment, allowing users to interact with the system through text input and output.
+
 
