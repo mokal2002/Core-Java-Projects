@@ -40,6 +40,56 @@
    git clone https://github.com/mokal2002/SecureBank.git
    cd SecureBank
 <hr>
-<h3>2. Hospital Management</h3>
+
+# Hospital Management System
+
+A simple console-based Hospital Management System developed in Core Java using MySQL and JDBC. This system manages patients, doctors, and appointments, providing basic CRUD functionalities.
+
+## Features
+
+- **Add Patient**: Register a new patient by entering their name, age, and gender.
+- **View Patients**: Display a list of all patients with their details.
+- **View Doctors**: Display a list of all doctors along with their specializations.
+- **Book Appointment**: Schedule an appointment between a patient and a doctor for a specified date.
+
+## Technologies Used
+
+- **Java**: Core Java for application logic.
+- **JDBC**: For connecting and interacting with the MySQL database.
+- **MySQL**: Database to store patient, doctor, and appointment data.
+
+## Project Structure
+
+- **`config`**: Contains the `AppConstants` class for database configuration.
+- **`service`**: Contains service classes (`DoctorService` and `PatientService`) that handle business logic.
+- **`validation`**: Includes the `valid` class for input validation.
+- **`HospitalManagementSystem.java`**: The main class that drives the application.
+
+## Database Schema
+
+- **Doctor Table**: 
+  - `id`: INT, Primary Key
+  - `name`: VARCHAR(255)
+  - `specialization`: VARCHAR(255)
+
+- **Patient Table**:
+  - `id`: INT, Primary Key
+  - `name`: VARCHAR(255)
+  - `age`: INT
+  - `gender`: VARCHAR(50)
+
+- **Appointments Table**:
+  - `id`: INT, Primary Key
+  - `patient_id`: INT, Foreign Key references `Patient(id)`
+  - `doctor_id`: INT, Foreign Key references `Doctor(id)`
+  - `appointment_date`: DATE
+
+## Setup and Usage
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/HospitalManagementSystem.git
+   cd HospitalManagementSystem
+
 <h3>3. Car Rental System</h3>
 
